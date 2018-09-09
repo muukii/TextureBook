@@ -1,0 +1,50 @@
+PODS:
+  - EasyPeasy (1.7.0)
+  - Reveal-SDK (17)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - TextAttributes (1.0)
+  - TextAttributesUtil (1.0.1):
+    - TextAttributes
+  - Texture/Core (2.7)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - Reveal-SDK
+  - RxCocoa
+  - RxSwift
+  - "TextAttributes (from `git@github.com:muukii/TextAttributes.git`)"
+  - TextAttributesUtil
+  - Texture/Core
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EasyPeasy
+    - Reveal-SDK
+    - RxCocoa
+    - RxSwift
+    - TextAttributesUtil
+    - Texture
+
+EXTERNAL SOURCES:
+  TextAttributes:
+    :git: "git@github.com:muukii/TextAttributes.git"
+
+CHECKOUT OPTIONS:
+  TextAttributes:
+    :commit: 5103579729925acf896697d0f799dff4468d4a39
+    :git: "git@github.com:muukii/TextAttributes.git"
+
+SPEC CHECKSUMS:
+  EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
+  Reveal-SDK: a6df49f47319bd19a110c960c498af32df72c0af
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  TextAttributes: 45b2713a1d174c377d320b51129c304eac381638
+  TextAttributesUtil: feb551ff3cccaa82ac6fd35db2cef0ed1146c21d
+  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
+
+PODFILE CHECKSUM: 446a2dc9a050e480df3b9fcbf738c8b59853d252
+
+COCOAPODS: 1.5.3

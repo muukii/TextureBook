@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63EAD42144315900CBA082 /* StackScrollNode.swift */; };
+		4B7731892144D617006313B5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7731882144D617006313B5 /* Color.swift */; };
+		4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318A2144D7B0006313B5 /* Dummy.swift */; };
+		4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318C2144DED2006313B5 /* AsyncListViewController.swift */; };
+		4BC849512144D3D40016C84B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC849502144D3D40016C84B /* ListViewController.swift */; };
+		4BC849532144D3F30016C84B /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC849522144D3F30016C84B /* ListViewController.storyboard */; };
+		4BF268842143E174000FEEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF268832143E174000FEEB3 /* AppDelegate.swift */; };
+		4BF268862143E175000FEEB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF268852143E175000FEEB3 /* ViewController.swift */; };
+		4BF268892143E175000FEEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF268872143E175000FEEB3 /* Main.storyboard */; };
+		4BF2688B2143E176000FEEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF2688A2143E176000FEEB3 /* Assets.xcassets */; };
+		4BF2688E2143E176000FEEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF2688C2143E176000FEEB3 /* LaunchScreen.storyboard */; };
+		620F2A0C8FA1653268DB525B /* Pods_TextureBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D27B34CDCAF7BD44FBA4D0 /* Pods_TextureBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22D27B34CDCAF7BD44FBA4D0 /* Pods_TextureBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B63EAD42144315900CBA082 /* StackScrollNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackScrollNode.swift; sourceTree = "<group>"; };
+		4B7731882144D617006313B5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4B77318A2144D7B0006313B5 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		4B77318C2144DED2006313B5 /* AsyncListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncListViewController.swift; sourceTree = "<group>"; };
+		4BC849502144D3D40016C84B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		4BC849522144D3F30016C84B /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		4BF268802143E174000FEEB3 /* TextureBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF268832143E174000FEEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BF268852143E175000FEEB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BF268882143E175000FEEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BF2688A2143E176000FEEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BF2688D2143E176000FEEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BF2688F2143E176000FEEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D733E492C9D1674C567A1E4E /* Pods-TextureBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextureBook/Pods-TextureBook.release.xcconfig"; sourceTree = "<group>"; };
+		EFC4ED29FC394A877CB283A7 /* Pods-TextureBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureBook/Pods-TextureBook.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BF2687D2143E174000FEEB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620F2A0C8FA1653268DB525B /* Pods_TextureBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1310F445EE5076514CC1FEDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4ED29FC394A877CB283A7 /* Pods-TextureBook.debug.xcconfig */,
+				D733E492C9D1674C567A1E4E /* Pods-TextureBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B63EAD32144314C00CBA082 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4B63EAD42144315900CBA082 /* StackScrollNode.swift */,
+				4B7731882144D617006313B5 /* Color.swift */,
+				4B77318A2144D7B0006313B5 /* Dummy.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4B63EAD62144323800CBA082 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				4BC849502144D3D40016C84B /* ListViewController.swift */,
+				4BC849522144D3F30016C84B /* ListViewController.storyboard */,
+				4B77318C2144DED2006313B5 /* AsyncListViewController.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		4BF268772143E174000FEEB3 = {
+			isa = PBXGroup;
+			children = (
+				4BF268822143E174000FEEB3 /* TextureBook */,
+				4BF268812143E174000FEEB3 /* Products */,
+				1310F445EE5076514CC1FEDD /* Pods */,
+				5B850525FE59511228E4475D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BF268812143E174000FEEB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BF268802143E174000FEEB3 /* TextureBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BF268822143E174000FEEB3 /* TextureBook */ = {
+			isa = PBXGroup;
+			children = (
+				4B63EAD62144323800CBA082 /* Book */,
+				4B63EAD32144314C00CBA082 /* Library */,
+				4BF268832143E174000FEEB3 /* AppDelegate.swift */,
+				4BF268852143E175000FEEB3 /* ViewController.swift */,
+				4BF268872143E175000FEEB3 /* Main.storyboard */,
+				4BF2688A2143E176000FEEB3 /* Assets.xcassets */,
+				4BF2688C2143E176000FEEB3 /* LaunchScreen.storyboard */,
+				4BF2688F2143E176000FEEB3 /* Info.plist */,
+			);
+			path = TextureBook;
+			sourceTree = "<group>";
+		};
+		5B850525FE59511228E4475D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22D27B34CDCAF7BD44FBA4D0 /* Pods_TextureBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BF2687F2143E174000FEEB3 /* TextureBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BF268922143E176000FEEB3 /* Build configuration list for PBXNativeTarget "TextureBook" */;
+			buildPhases = (
+				F1896E494E6B8EBBBA387A4C /* [CP] Check Pods Manifest.lock */,
+				4BF2687C2143E174000FEEB3 /* Sources */,
+				4BF2687D2143E174000FEEB3 /* Frameworks */,
+				4BF2687E2143E174000FEEB3 /* Resources */,
+				BD9C2B1696B7308605522BA8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextureBook;
+			productName = TextureBook;
+			productReference = 4BF268802143E174000FEEB3 /* TextureBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BF268782143E174000FEEB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = muukii;
+				TargetAttributes = {
+					4BF2687F2143E174000FEEB3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 4BF2687B2143E174000FEEB3 /* Build configuration list for PBXProject "TextureBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BF268772143E174000FEEB3;
+			productRefGroup = 4BF268812143E174000FEEB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BF2687F2143E174000FEEB3 /* TextureBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BF2687E2143E174000FEEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF2688E2143E176000FEEB3 /* LaunchScreen.storyboard in Resources */,
+				4BF2688B2143E176000FEEB3 /* Assets.xcassets in Resources */,
+				4BF268892143E175000FEEB3 /* Main.storyboard in Resources */,
+				4BC849532144D3F30016C84B /* ListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD9C2B1696B7308605522BA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextureBook/Pods-TextureBook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-17/iOS/RevealServer.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TextAttributes/TextAttributes.framework",
+				"${BUILT_PRODUCTS_DIR}/TextAttributesUtil/TextAttributesUtil.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextAttributes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextAttributesUtil.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextureBook/Pods-TextureBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1896E494E6B8EBBBA387A4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BF2687C2143E174000FEEB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */,
+				4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */,
+				4BF268862143E175000FEEB3 /* ViewController.swift in Sources */,
+				4BC849512144D3D40016C84B /* ListViewController.swift in Sources */,
+				4B7731892144D617006313B5 /* Color.swift in Sources */,
+				4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */,
+				4BF268842143E174000FEEB3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4BF268872143E175000FEEB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF268882143E175000FEEB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BF2688C2143E176000FEEB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF2688D2143E176000FEEB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BF268902143E176000FEEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BF268912143E176000FEEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BF268932143E176000FEEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC4ED29FC394A877CB283A7 /* Pods-TextureBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextureBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.TextureBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BF268942143E176000FEEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D733E492C9D1674C567A1E4E /* Pods-TextureBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextureBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.TextureBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BF2687B2143E174000FEEB3 /* Build configuration list for PBXProject "TextureBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF268902143E176000FEEB3 /* Debug */,
+				4BF268912143E176000FEEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BF268922143E176000FEEB3 /* Build configuration list for PBXNativeTarget "TextureBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF268932143E176000FEEB3 /* Debug */,
+				4BF268942143E176000FEEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BF268782143E174000FEEB3 /* Project object */;
+}
