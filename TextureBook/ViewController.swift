@@ -26,18 +26,20 @@ final class ViewController: UIViewController {
     stackScrollNode.collectionNode.view.delaysContentTouches = false
 
     stackScrollNode.append(nodes: [
-      CellNode(title: "ListViewController", detail: "UIKit") { [weak self] in
-        guard let `self` = self else { return }
-
+      CellNode(title: "ListViewController", detail: "UIKit") { [unowned self] in
         let storyboard = UIStoryboard(name: "ListViewController", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ListViewController")
         self.navigationController?.pushViewController(controller, animated: true)
         
       },
-      CellNode(title: "AsyncListViewController", detail: "Texture") {
+      CellNode(title: "AsyncListViewController", detail: "Texture") { [unowned self] in
         let c = AsyncListViewController()
         self.navigationController?.pushViewController(c, animated: true)
-      }
+      },
+      CellNode(title: "BridgeToAutoLayoutViewController", detail: "Texture") { [unowned self] in
+        let c = BridgeToAutoLayoutViewController()
+        self.navigationController?.pushViewController(c, animated: true)
+      },
       ])
   }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B48C13A2144F1EE00D00A17 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48C1392144F1ED00D00A17 /* NodeView.swift */; };
+		4B48C13E2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */; };
 		4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63EAD42144315900CBA082 /* StackScrollNode.swift */; };
 		4B7731892144D617006313B5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7731882144D617006313B5 /* Color.swift */; };
 		4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318A2144D7B0006313B5 /* Dummy.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		22D27B34CDCAF7BD44FBA4D0 /* Pods_TextureBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B48C1392144F1ED00D00A17 /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
+		4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeToAutoLayoutViewController.swift; sourceTree = "<group>"; };
 		4B63EAD42144315900CBA082 /* StackScrollNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackScrollNode.swift; sourceTree = "<group>"; };
 		4B7731882144D617006313B5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4B77318A2144D7B0006313B5 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
@@ -61,12 +65,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4B48C13B2144F36700D00A17 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4BC849502144D3D40016C84B /* ListViewController.swift */,
+				4BC849522144D3F30016C84B /* ListViewController.storyboard */,
+				4B77318C2144DED2006313B5 /* AsyncListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		4B48C13C2144F3DA00D00A17 /* BridgeToAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */,
+			);
+			path = BridgeToAutoLayout;
+			sourceTree = "<group>";
+		};
 		4B63EAD32144314C00CBA082 /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				4B63EAD42144315900CBA082 /* StackScrollNode.swift */,
 				4B7731882144D617006313B5 /* Color.swift */,
 				4B77318A2144D7B0006313B5 /* Dummy.swift */,
+				4B48C1392144F1ED00D00A17 /* NodeView.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -74,9 +97,8 @@
 		4B63EAD62144323800CBA082 /* Book */ = {
 			isa = PBXGroup;
 			children = (
-				4BC849502144D3D40016C84B /* ListViewController.swift */,
-				4BC849522144D3F30016C84B /* ListViewController.storyboard */,
-				4B77318C2144DED2006313B5 /* AsyncListViewController.swift */,
+				4B48C13C2144F3DA00D00A17 /* BridgeToAutoLayout */,
+				4B48C13B2144F36700D00A17 /* List */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -249,7 +271,9 @@
 			files = (
 				4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */,
 				4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */,
+				4B48C13A2144F1EE00D00A17 /* NodeView.swift in Sources */,
 				4BF268862143E175000FEEB3 /* ViewController.swift in Sources */,
+				4B48C13E2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift in Sources */,
 				4BC849512144D3D40016C84B /* ListViewController.swift in Sources */,
 				4B7731892144D617006313B5 /* Color.swift in Sources */,
 				4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */,
@@ -330,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -384,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
