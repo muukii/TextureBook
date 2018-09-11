@@ -17,9 +17,18 @@ open class NodeView<D: ASDisplayNode>: UIView {
   public let wrappedNode: D
   private let wrapperNode: WrapperNode
 
+  public var prefferedMaxLayoutWidth: CGFloat?
+
   open override var intrinsicContentSize: CGSize {
 
-    let r = wrapperNode.layoutThatFits(ASSizeRangeUnconstrained)
+    var range = ASSizeRangeUnconstrained
+
+    if let maxWidth = prefferedMaxLayoutWidth {
+      range.min.width = maxWidth
+      range.max.width = maxWidth
+    }
+
+    let r = wrapperNode.layoutThatFits(range)
     return r.size
   }
 
@@ -36,6 +45,10 @@ open class NodeView<D: ASDisplayNode>: UIView {
     wrapperNode.calculatedLayoutDidChangeHandler = { [weak self] in
       self?.invalidateIntrinsicContentSize()
     }
+
+    wrapperNode.layoutDidFinishHandler = { [weak self] in
+      self?.invalidateIntrinsicContentSize()
+    }
   }
 
   public required init?(coder aDecoder: NSCoder) {
@@ -48,30 +61,7 @@ open class NodeView<D: ASDisplayNode>: UIView {
 
     super.layoutSubviews()
 
-    let originalSize = wrapperNode.layoutThatFits(ASSizeRangeUnconstrained).size
-
-    if originalSize.width > bounds.width {
-
-      let range = ASSizeRange(
-        min: CGSize(
-          width: 0,
-          height: 0
-        ),
-        max: CGSize(
-          width: bounds.width,
-          height: CGFloat.infinity
-        )
-      )
-
-      let r = wrapperNode.layoutThatFits(range)
-      wrapperNode.frame.size = r.size
-
-    } else {
-
-      wrapperNode.frame.size = originalSize
-    }
-    super.layoutSubviews()
-    invalidateIntrinsicContentSize()
+    wrapperNode.frame = bounds
   }
 }
 

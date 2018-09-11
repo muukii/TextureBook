@@ -40,6 +40,14 @@ final class ViewController: UIViewController {
         let c = BridgeToAutoLayoutViewController()
         self.navigationController?.pushViewController(c, animated: true)
       },
+      CellNode(title: "CardView", detail: "Texture") { [unowned self] in
+        let c = SingleCardViewController()
+        self.navigationController?.pushViewController(c, animated: true)
+      },
+      CellNode(title: "CornerRounding", detail: "Texture") { [unowned self] in
+        let c = CornerRoundingViewController()
+        self.navigationController?.pushViewController(c, animated: true)
+      },
       ])
   }
 

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0AC3EF2146C94900E14084 /* SingleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0AC3EE2146C94900E14084 /* SingleCardViewController.swift */; };
+		4B0AC3F12146C97400E14084 /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0AC3F02146C97400E14084 /* CodeBasedViewController.swift */; };
 		4B48C13A2144F1EE00D00A17 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48C1392144F1ED00D00A17 /* NodeView.swift */; };
 		4B48C13E2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */; };
 		4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63EAD42144315900CBA082 /* StackScrollNode.swift */; };
+		4B6D4D4821480609002D371E /* CornerRoundingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D4D4721480609002D371E /* CornerRoundingViewController.swift */; };
 		4B7731892144D617006313B5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7731882144D617006313B5 /* Color.swift */; };
 		4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318A2144D7B0006313B5 /* Dummy.swift */; };
 		4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318C2144DED2006313B5 /* AsyncListViewController.swift */; };
@@ -25,9 +28,12 @@
 
 /* Begin PBXFileReference section */
 		22D27B34CDCAF7BD44FBA4D0 /* Pods_TextureBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0AC3EE2146C94900E14084 /* SingleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardViewController.swift; sourceTree = "<group>"; };
+		4B0AC3F02146C97400E14084 /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
 		4B48C1392144F1ED00D00A17 /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeToAutoLayoutViewController.swift; sourceTree = "<group>"; };
 		4B63EAD42144315900CBA082 /* StackScrollNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackScrollNode.swift; sourceTree = "<group>"; };
+		4B6D4D4721480609002D371E /* CornerRoundingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundingViewController.swift; sourceTree = "<group>"; };
 		4B7731882144D617006313B5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4B77318A2144D7B0006313B5 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		4B77318C2144DED2006313B5 /* AsyncListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncListViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 				4B7731882144D617006313B5 /* Color.swift */,
 				4B77318A2144D7B0006313B5 /* Dummy.swift */,
 				4B48C1392144F1ED00D00A17 /* NodeView.swift */,
+				4B0AC3F02146C97400E14084 /* CodeBasedViewController.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -97,10 +104,20 @@
 		4B63EAD62144323800CBA082 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				4B6D4D46214805F8002D371E /* CornerRounding */,
 				4B48C13C2144F3DA00D00A17 /* BridgeToAutoLayout */,
 				4B48C13B2144F36700D00A17 /* List */,
+				4B0AC3EE2146C94900E14084 /* SingleCardViewController.swift */,
 			);
 			path = Book;
+			sourceTree = "<group>";
+		};
+		4B6D4D46214805F8002D371E /* CornerRounding */ = {
+			isa = PBXGroup;
+			children = (
+				4B6D4D4721480609002D371E /* CornerRoundingViewController.swift */,
+			);
+			path = CornerRounding;
 			sourceTree = "<group>";
 		};
 		4BF268772143E174000FEEB3 = {
@@ -271,13 +288,16 @@
 			files = (
 				4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */,
 				4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */,
+				4B0AC3EF2146C94900E14084 /* SingleCardViewController.swift in Sources */,
 				4B48C13A2144F1EE00D00A17 /* NodeView.swift in Sources */,
 				4BF268862143E175000FEEB3 /* ViewController.swift in Sources */,
 				4B48C13E2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift in Sources */,
+				4B0AC3F12146C97400E14084 /* CodeBasedViewController.swift in Sources */,
 				4BC849512144D3D40016C84B /* ListViewController.swift in Sources */,
 				4B7731892144D617006313B5 /* Color.swift in Sources */,
 				4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */,
 				4BF268842143E174000FEEB3 /* AppDelegate.swift in Sources */,
+				4B6D4D4821480609002D371E /* CornerRoundingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
