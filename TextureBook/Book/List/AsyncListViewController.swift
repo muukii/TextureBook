@@ -12,6 +12,33 @@ import AsyncDisplayKit
 import TextAttributes
 import EasyPeasy
 
+//class MyListViewController : UIViewController {
+//
+//  let collectionNode: ASCollectionNode!
+//
+//  override func viewDidLoad() {
+//
+//    let collectionView = collectionNode.view
+//
+//    view.addSubview(collectionView)
+//
+//    // Setup AutoLayout to CollectionView
+//
+//  }
+//}
+//
+//extension MyListViewController :
+//  ASCollectionDataSource,
+//  ASCollectionDelegateFlowLayout
+//{
+//
+//  func collectionNode(_ collectionNode: ASCollectionNode, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
+//
+//
+//  }
+//
+//}
+
 final class AsyncListViewController : UIViewController {
 
   private let collectionNode: ASCollectionNode = {

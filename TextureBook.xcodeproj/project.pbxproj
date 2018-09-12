@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B0AC3EF2146C94900E14084 /* SingleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0AC3EE2146C94900E14084 /* SingleCardViewController.swift */; };
 		4B0AC3F12146C97400E14084 /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0AC3F02146C97400E14084 /* CodeBasedViewController.swift */; };
+		4B274D1621483EA5008E3706 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B274D1521483EA5008E3706 /* CardListViewController.swift */; };
 		4B48C13A2144F1EE00D00A17 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48C1392144F1ED00D00A17 /* NodeView.swift */; };
 		4B48C13E2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */; };
 		4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63EAD42144315900CBA082 /* StackScrollNode.swift */; };
@@ -16,8 +17,11 @@
 		4B7731892144D617006313B5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7731882144D617006313B5 /* Color.swift */; };
 		4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318A2144D7B0006313B5 /* Dummy.swift */; };
 		4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77318C2144DED2006313B5 /* AsyncListViewController.swift */; };
+		4BC252772148B877004CC408 /* ClippingCornerRoundingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC252762148B877004CC408 /* ClippingCornerRoundingNode.swift */; };
+		4BC252792148BE7B004CC408 /* CornerRoundingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC252782148BE7B004CC408 /* CornerRoundingNode.swift */; };
 		4BC849512144D3D40016C84B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC849502144D3D40016C84B /* ListViewController.swift */; };
 		4BC849532144D3F30016C84B /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC849522144D3F30016C84B /* ListViewController.storyboard */; };
+		4BDE09DA2148AD33004DD052 /* InlineCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE09D92148AD33004DD052 /* InlineCellNode.swift */; };
 		4BF268842143E174000FEEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF268832143E174000FEEB3 /* AppDelegate.swift */; };
 		4BF268862143E175000FEEB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF268852143E175000FEEB3 /* ViewController.swift */; };
 		4BF268892143E175000FEEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF268872143E175000FEEB3 /* Main.storyboard */; };
@@ -30,6 +34,7 @@
 		22D27B34CDCAF7BD44FBA4D0 /* Pods_TextureBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0AC3EE2146C94900E14084 /* SingleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardViewController.swift; sourceTree = "<group>"; };
 		4B0AC3F02146C97400E14084 /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
+		4B274D1521483EA5008E3706 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
 		4B48C1392144F1ED00D00A17 /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		4B48C13D2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeToAutoLayoutViewController.swift; sourceTree = "<group>"; };
 		4B63EAD42144315900CBA082 /* StackScrollNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackScrollNode.swift; sourceTree = "<group>"; };
@@ -37,8 +42,11 @@
 		4B7731882144D617006313B5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4B77318A2144D7B0006313B5 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		4B77318C2144DED2006313B5 /* AsyncListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncListViewController.swift; sourceTree = "<group>"; };
+		4BC252762148B877004CC408 /* ClippingCornerRoundingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingCornerRoundingNode.swift; sourceTree = "<group>"; };
+		4BC252782148BE7B004CC408 /* CornerRoundingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundingNode.swift; sourceTree = "<group>"; };
 		4BC849502144D3D40016C84B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4BC849522144D3F30016C84B /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		4BDE09D92148AD33004DD052 /* InlineCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineCellNode.swift; sourceTree = "<group>"; };
 		4BF268802143E174000FEEB3 /* TextureBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF268832143E174000FEEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF268852143E175000FEEB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +105,7 @@
 				4B77318A2144D7B0006313B5 /* Dummy.swift */,
 				4B48C1392144F1ED00D00A17 /* NodeView.swift */,
 				4B0AC3F02146C97400E14084 /* CodeBasedViewController.swift */,
+				4BDE09D92148AD33004DD052 /* InlineCellNode.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -108,6 +117,7 @@
 				4B48C13C2144F3DA00D00A17 /* BridgeToAutoLayout */,
 				4B48C13B2144F36700D00A17 /* List */,
 				4B0AC3EE2146C94900E14084 /* SingleCardViewController.swift */,
+				4B274D1521483EA5008E3706 /* CardListViewController.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -116,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				4B6D4D4721480609002D371E /* CornerRoundingViewController.swift */,
+				4BC252762148B877004CC408 /* ClippingCornerRoundingNode.swift */,
+				4BC252782148BE7B004CC408 /* CornerRoundingNode.swift */,
 			);
 			path = CornerRounding;
 			sourceTree = "<group>";
@@ -289,14 +301,18 @@
 				4B63EAD52144315900CBA082 /* StackScrollNode.swift in Sources */,
 				4B77318D2144DED2006313B5 /* AsyncListViewController.swift in Sources */,
 				4B0AC3EF2146C94900E14084 /* SingleCardViewController.swift in Sources */,
+				4B274D1621483EA5008E3706 /* CardListViewController.swift in Sources */,
+				4BC252772148B877004CC408 /* ClippingCornerRoundingNode.swift in Sources */,
 				4B48C13A2144F1EE00D00A17 /* NodeView.swift in Sources */,
 				4BF268862143E175000FEEB3 /* ViewController.swift in Sources */,
 				4B48C13E2144F3EF00D00A17 /* BridgeToAutoLayoutViewController.swift in Sources */,
+				4BC252792148BE7B004CC408 /* CornerRoundingNode.swift in Sources */,
 				4B0AC3F12146C97400E14084 /* CodeBasedViewController.swift in Sources */,
 				4BC849512144D3D40016C84B /* ListViewController.swift in Sources */,
 				4B7731892144D617006313B5 /* Color.swift in Sources */,
 				4B77318B2144D7B0006313B5 /* Dummy.swift in Sources */,
 				4BF268842143E174000FEEB3 /* AppDelegate.swift in Sources */,
+				4BDE09DA2148AD33004DD052 /* InlineCellNode.swift in Sources */,
 				4B6D4D4821480609002D371E /* CornerRoundingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,7 +24,7 @@ final class SingleCardViewController : CodeBasedViewController {
 
     let layout = node.layoutThatFits(
       ASSizeRange(
-        min: .init(width: 0.0, height: 0),
+        min: .init(width: 0.0, height: 250),
         max: .init(width: 240.0, height: .infinity)
       )
     )
@@ -51,19 +51,21 @@ extension SingleCardViewController {
 
       super.init()
 
+      backgroundColor = UIColor(white: 0, alpha: 0.02)
+
       titleNode.attributedText = NSAttributedString(
         string: title,
         attributes: [
-          .font : UIFont.boldSystemFont(ofSize: 16),
-          .foregroundColor : UIColor.white,
+          .font : UIFont.preferredFont(forTextStyle: .headline),
+          .foregroundColor : UIColor.appNavy001,
           ]
       )
 
       detailNode.attributedText = NSAttributedString(
         string: detail,
         attributes: [
-          .font : UIFont.systemFont(ofSize: 14),
-          .foregroundColor : UIColor.white,
+          .font : UIFont.preferredFont(forTextStyle: .subheadline),
+          .foregroundColor : UIColor.appNavy001,
           ]
       )
 
@@ -74,21 +76,33 @@ extension SingleCardViewController {
     }
 
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-      return ASRatioLayoutSpec(
-        ratio: 1.6,
-        child: ASBackgroundLayoutSpec(
-          child: ASInsetLayoutSpec(
-            insets: .init(top: 8, left: 8, bottom: 8, right: 8),
-            child: ASStackLayoutSpec(
-              direction: .vertical,
-              spacing: 8,
-              justifyContent: .end,
-              alignItems: .start,
-              children: [titleNode, detailNode]
-            )
+
+      let imageSpec = ASRatioLayoutSpec(
+        ratio: 1,
+        child: imageNode
+      )
+      
+      let body = ASStackLayoutSpec(
+        direction: .vertical,
+        spacing: 8,
+        justifyContent: .end,
+        alignItems: .start,
+        children: [
+          imageSpec,
+          titleNode,
+          detailNode
+        ]
+      )
+
+      return
+        ASInsetLayoutSpec(
+          insets: .init(
+            top: 8,
+            left: 8,
+            bottom: 8,
+            right: 8
           ),
-          background: imageNode
-        )
+          child: body
       )
     }
   }
