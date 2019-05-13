@@ -45,7 +45,7 @@ final class BridgeToAutoLayoutViewController : UIViewController {
   @objc
   private dynamic func didTap() {
 
-    nodeView.wrappedNode.set(text: Lorem.ipsum(Int(arc4random_uniform(50) + 10)))
+    nodeView.wrappedNode.set(text: Lorem.ipsum(Int(arc4random_uniform(500) + 10)))
   }
 }
 

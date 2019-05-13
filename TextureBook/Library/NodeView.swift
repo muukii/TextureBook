@@ -10,27 +10,12 @@ import UIKit
 import AsyncDisplayKit
 
 // NodeView port from Pairs Global
-open class NodeView<D: ASDisplayNode>: UIView {
+open class NodeView<D: ASDisplayNode>: UILabel {
 
   // MARK: - Properties
 
   public let wrappedNode: D
   private let wrapperNode: WrapperNode
-
-  public var prefferedMaxLayoutWidth: CGFloat?
-
-  open override var intrinsicContentSize: CGSize {
-
-    var range = ASSizeRangeUnconstrained
-
-    if let maxWidth = prefferedMaxLayoutWidth {
-      range.min.width = maxWidth
-      range.max.width = maxWidth
-    }
-
-    let r = wrapperNode.layoutThatFits(range)
-    return r.size
-  }
 
   // MARK: - Initializers
 
@@ -40,6 +25,10 @@ open class NodeView<D: ASDisplayNode>: UIView {
     self.wrapperNode = WrapperNode(embedNode: wrappedNode)
 
     super.init(frame: frame)
+    
+    // To call `textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int)`
+    numberOfLines = 0
+    
     addSubnode(wrapperNode)
 
     wrapperNode.calculatedLayoutDidChangeHandler = { [weak self] in
@@ -53,6 +42,16 @@ open class NodeView<D: ASDisplayNode>: UIView {
 
   public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+  
+  open override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+    
+    var range = ASSizeRangeUnconstrained
+    
+    range.max.width = bounds.width
+    
+    let r = wrapperNode.layoutThatFits(range)
+    return CGRect(origin: .zero, size: r.size)
   }
 
   // MARK: - Functions
