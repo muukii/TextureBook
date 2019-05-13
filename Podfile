@@ -10,8 +10,7 @@ target 'TextureBook' do
   pod 'EasyPeasy'
   pod 'Reveal-SDK'
 
-  pod 'TextAttributes', git: "git@github.com:muukii/TextAttributes.git"
-  pod 'TextAttributesUtil'
+  pod 'TypedTextAttributes'
   pod 'RxSwift'
   pod 'RxCocoa'
 

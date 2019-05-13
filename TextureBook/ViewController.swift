@@ -9,8 +9,7 @@
 import UIKit
 
 import AsyncDisplayKit
-import TextAttributes
-import TextAttributesUtil
+import TypedTextAttributes
 import EasyPeasy
 
 final class ViewController: UIViewController {

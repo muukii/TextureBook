@@ -8,7 +8,7 @@
 
 import UIKit
 
-import TextAttributes
+import TypedTextAttributes
 
 final class ListViewController : UIViewController {
 
@@ -20,7 +20,7 @@ final class ListViewController : UIViewController {
     super.viewDidLoad()
 
     let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-    layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+    layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
 
     view.layoutIfNeeded()
 
@@ -106,7 +106,7 @@ final class ListCell : UICollectionViewCell {
       return super.preferredLayoutAttributesFitting(layoutAttributes)
     }
 
-    let targetSize = CGSize(width: width, height: UILayoutFittingCompressedSize.height)
+    let targetSize = CGSize(width: width, height: UIView.layoutFittingCompressedSize.height)
 
     let size = contentView.systemLayoutSizeFitting(
       targetSize,

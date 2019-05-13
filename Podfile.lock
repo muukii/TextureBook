@@ -1,50 +1,42 @@
 PODS:
-  - EasyPeasy (1.7.0)
-  - Reveal-SDK (17)
-  - RxCocoa (4.2.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.2.0)
-  - TextAttributes (1.0)
-  - TextAttributesUtil (1.0.1):
-    - TextAttributes
-  - Texture/Core (2.7)
+  - EasyPeasy (1.9.0)
+  - Reveal-SDK (22)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - Texture/Core (2.8.1)
+  - TypedTextAttributes (1.0.2)
 
 DEPENDENCIES:
   - EasyPeasy
   - Reveal-SDK
   - RxCocoa
   - RxSwift
-  - "TextAttributes (from `git@github.com:muukii/TextAttributes.git`)"
-  - TextAttributesUtil
   - Texture/Core
+  - TypedTextAttributes
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - EasyPeasy
     - Reveal-SDK
     - RxCocoa
+    - RxRelay
     - RxSwift
-    - TextAttributesUtil
     - Texture
-
-EXTERNAL SOURCES:
-  TextAttributes:
-    :git: "git@github.com:muukii/TextAttributes.git"
-
-CHECKOUT OPTIONS:
-  TextAttributes:
-    :commit: 5103579729925acf896697d0f799dff4468d4a39
-    :git: "git@github.com:muukii/TextAttributes.git"
+    - TypedTextAttributes
 
 SPEC CHECKSUMS:
-  EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
-  Reveal-SDK: a6df49f47319bd19a110c960c498af32df72c0af
-  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  TextAttributes: 45b2713a1d174c377d320b51129c304eac381638
-  TextAttributesUtil: feb551ff3cccaa82ac6fd35db2cef0ed1146c21d
-  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
+  EasyPeasy: 19a84ef8f8bbcf925b9fecc29d1d78b7dab96718
+  Reveal-SDK: 1385ab77aa15e9a3e21f798c74bd8e94cb54c651
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+  TypedTextAttributes: 280e427de3ea96dec1d1869129e5e251b8f52f37
 
-PODFILE CHECKSUM: 446a2dc9a050e480df3b9fcbf738c8b59853d252
+PODFILE CHECKSUM: 4332b3e3287115c5e9d3caf01a683adafb12d129
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

@@ -9,7 +9,7 @@
 import UIKit
 
 import AsyncDisplayKit
-import TextAttributes
+import TypedTextAttributes
 import EasyPeasy
 
 //class MyListViewController : UIViewController {
